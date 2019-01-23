@@ -16,42 +16,59 @@
         <link rel="styleseet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
+    
     <body>
+        <!-- header -->
         <header>
             <!-- nav -->
             <nav>
                 <section class="container clearfx">
-                    <div class="logo">Sit <span class="txtColour1">On</span> Chair</div>
-                    <ul class="menu">
-                        <li class="menu__item"><a href="#">O firmie</a>
-                            <ul class="submenu">
-                                <li><a href="#">Aktualności</a></li>
-                                <li><a href="#">Nasz team</a></li>
-                                <li><a href="#">Historia</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu__item"><a href="#">Galeria</a></li>
-                        <li class="menu__item"><a href="#">Kontakt</a></li>
-                    </ul>
+                    <div class="nav">
+                        <div class="logo">Sit <span class="txtColour1">On</span> Chair</div>
+                        <ul class="menu">
+                            <li class="menu--item"><a href="#" class="menu--link"><span>O firmie</span></a>
+                                <ul class="submenu">
+                                    <li class="submenu--item"><a href="#">Aktualności</a></li>
+                                    <li class="submenu--item"><a href="#">Nasz team</a></li>
+                                    <li class="submenu--item"><a href="#">Historia</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu--item"><a href="#" class="menu--link">Galeria</a></li>
+                            <li class="menu--item"><a href="#" class="menu--link">Kontakt</a></li> 
+                        </ul>
+                    </div>
                 </section>
             </nav>
+            <!-- end of nav -->
             
-            <section class="slider-wrap container clearfix">
-                <ul>
-                    <li>
-                        <img src="images/black_chair.png">
-                        <div>
-                            <h2>Sit <span class="txtColour1">On</span> Our <span class="txtColour1">Chair</span></h2>
-                            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.</p>
-                            <a href="#">Zobacz więcej</a>
-                        </div>
-                    </li>
-                </ul>
-                <span class="arrow-left"></span>
-                <span class="arrow-right"></span>
+            <!-- silder -->
+            <section class="slider__wrap container clearfix">
+                <div class="slider__gallery">
+                    <div class="arrow--left"></div>
+                    <ul class="gallery--picture">
+                        <li class="picture--item">
+                            <img src="images/black_chair.png" alt="">
+                        </li>
+                        <!-- <li class="picture--item">
+                            <img src="images/orange_chair.png" alt="">
+                        </li>
+                        <li class="picture--item">
+                            <img src="images/red_chair.png" alt="">
+                        </li> -->
+                    </ul>
+                    <div class="slider--text">
+                        <h2>Sit <span class="txtColour1">On</span> Our <span class="txtColour1">Chair</span></h2>
+                        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.</p>
+                        <a href="#">Zobacz więcej</a>
+                    </div>
+                    <div class="arrow--right"></div>
+                </div>
             </section>
+            <!-- end of slider -->
         </header>
+        <!-- end of header -->
 
+        <!-- main -->
         <main class="main">
             <section class="container clearfix">
                 <figure class="col">
@@ -74,7 +91,9 @@
                 </figure>
             </section>
         </main>
+        <!-- end of main -->
 
+        <!-- content -->
         <section class="content">
             <section class="container clearfix">
                 <h3 class="price__list">Cennik</h3>
@@ -125,7 +144,9 @@
                 </section>
             </section>
         </section>
+        <!-- end of content -->
 
+        <!-- application -->
         <section id="application">
             <section class="container clearfix flex">
                 <section class="item__1 item">
@@ -192,7 +213,9 @@
                 </section>        
             </section>
         </section>
+        <!-- end of application -->
 
+        <!-- contact -->
         <sestion class="contact__content">
             <section class="container clearfix">
                 <h3 class="price__list">Kontakt</h3>
@@ -224,6 +247,9 @@
                 </section>
             </section>
         </sestion>
+        <!-- end of contact -->
+
+        <!-- footer -->
         <footer>
             <section class="container clearfix">
                 <div class="footer__content">
@@ -250,6 +276,7 @@
                 </div>
             </section>
         </footer>
+        <!-- end of footer -->
     </body>
     <script src="js/app.js"></script>
 </html>
