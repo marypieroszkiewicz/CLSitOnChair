@@ -21,4 +21,43 @@ document.addEventListener('DOMContentLoaded', function() {
 /* ----- SLIDER GALLERY ----- */
 /* ---------------------------------------------------- */
 
+	const sliderList = document.querySelectorAll('.gallery--picture li');
+	const previousBtn = document.querySelector('.js--btn.arrow--left');
+	const nextBtn = document.querySelector('.js--btn.arrow--right');
+	let counter = 0;
+
+	// Previous Button
+	function previousPicture(ev) {
+		ev.preventDefault();
+
+		sliderList[counter].classList.remove('visible');
+
+		if (counter === 0) {
+			counter = sliderList.length - 1;
+		} else {
+			counter--;
+		}
+
+		sliderList[counter].classList.add('visible');
+	}
+
+	// Next Button
+	function nextPicture(ev) {
+		ev.preventDefault();
+
+		sliderList[counter].classList.remove('visible');
+
+		if (counter === sliderList.length - 1) {
+			counter = 0;
+		} else {
+			counter++;
+		}
+
+		sliderList[counter].classList.add('visible');
+	}
+
+	sliderList[counter].classList.add('visible');
+	previousBtn.addEventListener('click', previousPicture);
+	nextBtn.addEventListener('click', nextPicture);
+
 });

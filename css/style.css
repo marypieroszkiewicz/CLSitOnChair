@@ -145,6 +145,18 @@ nav {
   flex-basis: 50%;
 }
 
+/*.gallery--picture {
+  display: flex;
+}*/
+
+.slider__gallery li {
+    display: none;
+}
+
+.slider__gallery .visible {
+    display: block;
+}
+
 .slider--text {
   padding-right: 113px;
   text-align: center;
@@ -191,13 +203,15 @@ nav {
   border-left: 4px solid #24baa0;
   border-bottom: 4px solid #24baa0;
   left: 9px;
+  cursor: pointer;
 }
 
 /* --- Ustawienie odpowiednich borderów aby wyglądało jak strzałka i ustawienie w odpowiednim miejscu --- */
 .slider__gallery .arrow--right {
   border-right: 4px solid #24baa0;
   border-top: 4px solid #24baa0;
-  right: 9px;  
+  right: 9px;
+  cursor: pointer;
 }
 
 /* ----- END OF SLIDER ----- */
