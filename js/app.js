@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /* ---------------------------------------------------- */
-/* ----- DROPDOWN LIST OF ITEMS - CALCULATOR ----- */
+/* ----- DROPDOWN LIST OF ITEMS + CALCULATOR ----- */
 /* ---------------------------------------------------- */
 
 const dropdownArrow = document.querySelectorAll('.list_arrow');
