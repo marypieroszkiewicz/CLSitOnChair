@@ -1,3 +1,5 @@
+/* ----- GLOBAL STYLES ----- */
+
 * {
   margin: 0;
   padding: 0;
@@ -51,6 +53,8 @@ a {
 }
 
 /* ----- END OF COMMON ----- */
+
+/* ----- END OF GLOBAL STYLES ----- */
 
 
 /* ----- HEADER ----- */
@@ -144,10 +148,6 @@ nav {
 .slider--text {
   flex-basis: 50%;
 }
-
-/*.gallery--picture {
-  display: flex;
-}*/
 
 .slider__gallery li {
     display: none;
@@ -715,6 +715,10 @@ sup {
 
 .title {
   height: 30px;
+}
+
+.visible {
+  display: block;
 }
 
 /* ----- END OF APPLICATION ----- */
